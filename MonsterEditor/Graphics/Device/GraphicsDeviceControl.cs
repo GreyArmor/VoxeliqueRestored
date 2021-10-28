@@ -183,7 +183,7 @@ namespace Voxeliq.MonsterEditor.Rendering.GraphicsDevice
                 Rectangle sourceRectangle = new Rectangle(0, 0, ClientSize.Width,
                                                                 ClientSize.Height);
 
-                GraphicsDevice.Present(sourceRectangle, null, this.Handle);
+                GraphicsDevice.Present();
             }
             catch
             {

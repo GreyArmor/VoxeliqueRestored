@@ -40,7 +40,7 @@ namespace Client
             InitLoggers(); // init logging facility.
 
             Logger.Info("voxeliq v{0} warming-up..", Assembly.GetAssembly(typeof (Player)).GetName().Version);
-            //Logger.Info(string.Format("Running over {0} {1}.", PlatformManager.DotNetFramework, PlatformManager.DotNetFrameworkVersion));
+            Logger.Info(string.Format("Running over {0} {1}.", PlatformManager.DotNetFramework, PlatformManager.DotNetFrameworkVersion));
             Logger.Info(string.Format("Using game framework {0} {1}, over {2}.", PlatformManager.GameFramework, PlatformManager.GameFrameworkVersion, PlatformManager.GraphicsApi));            
 
             using (var game = new GameClient()) // startup the game.

@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.31605.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VoxeliqRestored", "VexeliqRestored\VoxeliqRestored.csproj", "{8E491D3A-5205-4F81-B5CC-4FC115DAA0E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonsterEditor", "MonsterEditor\MonsterEditor.csproj", "{C309C370-2801-452E-A2F4-391FC7D95480}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoiseTool", "NoiseTool\NoiseTool.csproj", "{357633AF-8290-4D89-8ED6-67A7875E8E79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoiseTool", "NoiseTool\NoiseTool.csproj", "{357633AF-8290-4D89-8ED6-67A7875E8E79}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonsterEditor", "MonsterEditor\MonsterEditor.csproj", "{5E21E486-4A99-416F-B048-3331755FF1C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{8E491D3A-5205-4F81-B5CC-4FC115DAA0E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E491D3A-5205-4F81-B5CC-4FC115DAA0E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E491D3A-5205-4F81-B5CC-4FC115DAA0E2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C309C370-2801-452E-A2F4-391FC7D95480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C309C370-2801-452E-A2F4-391FC7D95480}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C309C370-2801-452E-A2F4-391FC7D95480}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C309C370-2801-452E-A2F4-391FC7D95480}.Release|Any CPU.Build.0 = Release|Any CPU
 		{357633AF-8290-4D89-8ED6-67A7875E8E79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{357633AF-8290-4D89-8ED6-67A7875E8E79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{357633AF-8290-4D89-8ED6-67A7875E8E79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{357633AF-8290-4D89-8ED6-67A7875E8E79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E21E486-4A99-416F-B048-3331755FF1C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E21E486-4A99-416F-B048-3331755FF1C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E21E486-4A99-416F-B048-3331755FF1C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E21E486-4A99-416F-B048-3331755FF1C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

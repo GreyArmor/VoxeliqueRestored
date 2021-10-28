@@ -13,7 +13,6 @@ using Engine.Graphics;
 using Engine.Graphics.Effects.PostProcessing.Bloom;
 using Engine.Platforms;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
 
 namespace Client
 {
@@ -48,7 +47,7 @@ namespace Client
         {
             this.Content.RootDirectory = "Content"; // set content root directory.
             this._graphicsDeviceManager = new GraphicsDeviceManager(this);
-            _graphicsDeviceManager.GraphicsProfile = GraphicsProfile.HiDef;
+            this._graphicsDeviceManager.GraphicsProfile = Microsoft.Xna.Framework.Graphics.GraphicsProfile.HiDef;
         }
 
         /// <summary>
@@ -72,13 +71,13 @@ namespace Client
                 {
                     WidthInBlocks = 16,
                     HeightInBlocks = 128,
-                    LenghtInBlocks = 16,
+                    LengthInBlocks = 16,
                 },
                 Cache =
                 {
                     CacheExtraChunks = true,
-                    ViewRange = 8,
-                    CacheRange = 12,
+                    ViewRange = 12,
+                    CacheRange = 16,
                 },
                 Graphics =
                 {

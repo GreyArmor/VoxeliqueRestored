@@ -69,8 +69,6 @@ namespace Engine.Assets
 
         public SpriteFont Verdana { get; private set; }
 
-        private const string EffectShaderExtension = ".xnb"; 
-
         private static readonly Logger Logger = LogManager.CreateLogger(); // the logger.
 
         //Creates a new asset manager instance.
@@ -95,20 +93,17 @@ namespace Engine.Assets
         public void LoadContent()
         {
             try
-            {                                
+            {
+                //for some reason aimed block connot be built 
+                //this.AimedBlockModel = Game.Content.Load<Model>(@"Models/AimedBlock");
                 this.AimedBlockModel = Game.Content.Load<Model>(@"Models/SkyDome");
+               
+                //mii model is missing
+                //this.SampleModel = Game.Content.Load<Model>(@"Models/Mii");
+
                 this.SampleModel = Game.Content.Load<Model>(@"Models/SkyDome");
+
                 this.SkyDomeModel = Game.Content.Load<Model>(@"Models/SkyDome");
-
-                this.BlockTextureAtlas = Game.Content.Load<Texture2D>(@"Textures/terrain");
-                this.CrackTextureAtlas = Game.Content.Load<Texture2D>(@"Textures/cracks");
-                this.AimedBlockTexture = Game.Content.Load<Texture2D>(@"Textures/AimedBlock");
-                this.CrossHairNormalTexture = Game.Content.Load<Texture2D>(@"Textures/Crosshairs/Normal");
-                this.CrossHairShovelTexture = Game.Content.Load<Texture2D>(@"Textures/Crosshairs/Shovel");
-                this.CloudMapTexture = Game.Content.Load<Texture2D>(@"Textures/cloudmap");
-                this.StarMapTexture = Game.Content.Load<Texture2D>(@"Textures/starmap");
-                this.CloudTexture = Game.Content.Load<Texture2D>(@"Textures/cloud-texture");
-
 
                 this.BlockEffect = this.LoadEffectShader(@"Effects/BlockEffect");
                 this.AimedBlockEffect = new BasicEffect(Game.GraphicsDevice);
@@ -118,7 +113,14 @@ namespace Engine.Assets
                 this.SkyDomeEffect = this.LoadEffectShader(@"Effects/SkyDome");
                 this.PerlinNoiseEffect = this.LoadEffectShader(@"Effects/PerlinNoise");
 
-             
+                this.BlockTextureAtlas = Game.Content.Load<Texture2D>(@"Textures/terrain");
+                this.CrackTextureAtlas = Game.Content.Load<Texture2D>(@"Textures/cracks");
+                this.AimedBlockTexture = Game.Content.Load<Texture2D>(@"Textures/AimedBlock");
+                this.CrossHairNormalTexture = Game.Content.Load<Texture2D>(@"Textures/Crosshairs/Normal");
+                this.CrossHairShovelTexture = Game.Content.Load<Texture2D>(@"Textures/Crosshairs/Shovel");
+                this.CloudMapTexture = Game.Content.Load<Texture2D>(@"Textures/cloudmap");
+                this.StarMapTexture = Game.Content.Load<Texture2D>(@"Textures/starmap");
+                this.CloudTexture = Game.Content.Load<Texture2D>(@"Textures/cloud-texture");
 
                 this.Verdana = Game.Content.Load<SpriteFont>(@"Fonts/Verdana");
             }
